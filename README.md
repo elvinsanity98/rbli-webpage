@@ -6,7 +6,7 @@ It presents the bank's three loan products (Agricultural, Microfinance, Commerci
 insurance benefits, the basic requirements per loan, an "Apply now" form and the branch contact details,
 all taken from the bank's 2023 brochure.
 
-**Live site:** https://elvinsanity98.github.io/rbli-webpage/
+**Live site:** https://rbliloy.com/
 
 ## Files
 
@@ -50,9 +50,19 @@ python -m http.server 5173
 
 Then open http://localhost:5173.
 
-## Hosting
+## Hosting and custom domain
 
-Served with GitHub Pages from the `main` branch (root folder).
+Served with GitHub Pages from the `main` branch (root folder). The `CNAME` file contains `rbliloy.com`.
+
+DNS for `rbliloy.com` (managed at Hostinger) must contain:
+
+| Type  | Name  | Value                                                                  |
+| ----- | ----- | ---------------------------------------------------------------------- |
+| A     | `@`   | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (four records) |
+| CNAME | `www` | `elvinsanity98.github.io`                                              |
+
+Do not remove the existing `MX` and `TXT` records: they belong to the domain's Titan email.
+After DNS is set, open Settings → Pages in this repo and tick **Enforce HTTPS** once it becomes available.
 
 ---
 
