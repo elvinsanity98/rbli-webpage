@@ -281,6 +281,7 @@ section[id]{scroll-margin-top:84px}
 .form-note{margin-top:14px;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.86)}
 .form-note a{color:#fff;font-weight:700}
 .status{min-height:1.4em;margin-top:10px;font-size:14px;font-weight:700;color:var(--amber)}
+html:not(.js) #apply-form{display:none}
 
 /* ---------- branches ---------- */
 .branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
@@ -685,7 +686,8 @@ section[id]{scroll-margin-top:84px}
         <aside class="apply on-dark reveal" data-d="1" id="apply" aria-labelledby="apply-title">
           <h3 id="apply-title">Apply now!</h3>
           <p>Fill up the following fields and send your details to our team.</p>
-          <form id="apply-form" action="mailto:ruralbankofliloy@gmail.com?subject=Loan%20inquiry" method="post" enctype="text/plain">
+          <noscript><p class="form-note">This form needs JavaScript. You can email us instead at <a href="mailto:ruralbankofliloy@gmail.com">ruralbankofliloy@gmail.com</a>.</p></noscript>
+          <form id="apply-form">
             <div class="field">
               <label for="f-loan">Loan type</label>
               <select id="f-loan" name="loan">

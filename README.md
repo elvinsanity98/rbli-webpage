@@ -40,7 +40,8 @@ photos (same file names) for sharper images.
 
 The site is static, so the form does not store anything. On submit it opens the visitor's email app with a
 ready-to-send message addressed to `ruralbankofliloy@gmail.com`. To change the recipient, edit the
-`mailto:` address in the form and in the script at the bottom of `index.html`.
+`ruralbankofliloy@gmail.com` address in the script at the bottom of `index.html`
+(and in the short no-JavaScript note above the form).
 
 ## Preview locally
 
