@@ -2,9 +2,10 @@
 
 A one-page promotional website for **Rural Bank of Liloy (ZN), Inc.** — *Always at your service.*
 
-It presents the bank's three loan products (Agricultural, Microfinance, Commercial), the microfinance
-insurance benefits, the basic requirements per loan, an "Apply now" form and the branch contact details,
-all taken from the bank's 2023 brochure.
+It presents the bank's loan products (Agricultural, Microfinance, Commercial, plus Salary, Pension and
+MABS loans), the savings and deposit accounts, the microfinance insurance benefits, the basic requirements
+per loan, an "Apply now" form, and the Head Office and branch contact details. The content comes from the
+bank's 2023 brochure and its updated product and contact list.
 
 **Live site:** https://rbliloy.com/
 
@@ -30,7 +31,9 @@ Everything is in `index.html`. Search for the text you want to change, for examp
 | Interest rates, terms, amounts | `class="rate"` or `class="specs"`    |
 | Insurance benefit amounts      | `class="ledger"`                     |
 | Requirements per loan          | `id="panel-agri"`, `panel-micro`, `panel-comm` |
-| Branch addresses and numbers   | `class="branches"`                   |
+| Salary, pension, MABS loans    | `class="more-loans"`                 |
+| Savings and deposit accounts   | `id="savings"`                       |
+| Head Office and branch numbers | `class="branches"` (also the footer and the `ld+json` block at the top) |
 | Email, Facebook                | `ruralbankofliloy@`, `facebook.com/rbliloy` |
 
 Photos in `assets/` are cropped from the brochure and are small. Replace them with the original
